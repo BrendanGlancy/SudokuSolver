@@ -1,4 +1,3 @@
-
 board = [
 	[7,8,0,4,0,0,1,2,0],
 	[6,0,0,0,7,5,0,0,9],
@@ -79,7 +78,16 @@ def find_empty(bo):
 
 	return None
 
-print_board(board)
-solve(board)
-print('____________________')
-print_board(board)
+
+
+def main(board):
+    # print the original board
+    print_board(board)
+    # solve it
+    solve(board)
+    print('____________________________________________________________________________')
+    # print the solved board
+    print_board(board)
+
+if __name__ == "__main__":
+	main(board)
